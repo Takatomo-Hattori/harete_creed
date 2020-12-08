@@ -741,6 +741,11 @@ body {
   margin-top: 40px;
 }
 
+.price-section__txt {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+}
+
 .price-section__img {
   display: block;
   width: 100%;
