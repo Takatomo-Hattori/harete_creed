@@ -1,0 +1,126 @@
+@media screen and(min-width:700px) {
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .top-section {
+    &__ttl {
+      writing-mode: horizontal-tb;
+      text-align: center;
+      font-size: 3.5rem;
+      font-weight: bold;
+      line-height: 1.8;
+    }
+    &__txt {
+      margin-top: 40px;
+      display: block;
+      font-size: 2rem;
+      text-align: center;
+      line-height: 2;
+      color: white;
+      // font-weight: bold;
+    }
+  }
+  .descript-section {
+    margin-bottom: 30px;
+    &__ttl {
+      font-size: 3.2rem;
+      margin-top: 60px;
+    }
+    &__txt {
+      font-size: 2rem;
+      text-align: center;
+      &--mb {
+        display: none;
+      }
+    }
+  }
+  .merit-section {
+    margin-bottom: 100px;
+    &__ttl {
+      font-size: 3rem;
+    }
+    .mb {
+      display: none;
+    }
+    &__contents {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 50px;
+      margin-bottom: 100px;
+    }
+    &__content {
+      width: 30%;
+    }
+    &__item {
+      width: 250px;
+      height: 250px;
+      margin-bottom: 30px;
+      img {
+        display: block;
+        width: 80px;
+        margin: 0 auto;
+      }
+      p {
+        font-size: 1.4rem;
+        text-align: center;
+        width: 80%;
+      }
+    }
+  }
+  .btn-section {
+    margin-bottom: 100px;
+  }
+  .chart-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    &__ttl {
+      font-size: 3rem;
+    }
+    &__heading {
+      font-size: 2.4rem;
+      margin-bottom: 20px;
+    }
+    &__text {
+      font-size: 1.6rem;
+      margin-bottom: 50px;
+    }
+  }
+
+  .price-section {
+    .mb {
+      display: none;
+    }
+    &__contents {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    &__img {
+      width: 45%;
+      margin-bottom: 40px;
+    }
+    &__ttl {
+      font-size: 3rem;
+    }
+    &__heading {
+      font-size: 2.4rem;
+      margin-top: 50px;
+    }
+    &__text {
+      font-size: 1.6rem;
+    }
+  }
+  .qa-section {
+    &__ttl {
+      font-size: 3rem;
+    }
+    &__heading {
+      font-size: 2.4rem;
+    }
+    &__text {
+      font-size: 1.6rem;
+      margin-bottom: 50px;
+    }
+  }
+}

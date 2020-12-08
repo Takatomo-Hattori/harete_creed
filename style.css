@@ -1,0 +1,919 @@
+@charset "UTF-8";
+/*! destyle.css v2.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
+/* Reset box-model and set borders */
+/* ============================================ */
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-style: solid;
+  border-width: 0;
+}
+
+/* Document */
+/* ============================================ */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ * 3. Remove gray overlay on links for iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-tap-highlight-color: transparent;
+  /* 3*/
+}
+
+/* Sections */
+/* ============================================ */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/* Vertical rhythm */
+/* ============================================ */
+p,
+table,
+blockquote,
+address,
+pre,
+iframe,
+form,
+figure,
+dl {
+  margin: 0;
+}
+
+/* Headings */
+/* ============================================ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
+
+/* Lists (enumeration) */
+/* ============================================ */
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Lists (definition) */
+/* ============================================ */
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 0;
+}
+
+/* Grouping content */
+/* ============================================ */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+  border-top-width: 1px;
+  margin: 0;
+  clear: both;
+  color: inherit;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: inherit;
+  /* 2 */
+}
+
+address {
+  font-style: inherit;
+}
+
+/* Text-level semantics */
+/* ============================================ */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: inherit;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: inherit;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content */
+/* ============================================ */
+/**
+ * Prevent vertical alignment issues.
+ */
+img,
+embed,
+object,
+iframe {
+  vertical-align: bottom;
+}
+
+/* Forms */
+/* ============================================ */
+/**
+ * Reset form fields to make them styleable
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  vertical-align: middle;
+  color: inherit;
+  font: inherit;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  border-radius: 0;
+  text-align: inherit;
+}
+
+/**
+ * Reset radio and checkbox appearance to preserve their look in iOS.
+ */
+[type="checkbox"] {
+  -webkit-appearance: checkbox;
+  -moz-appearance: checkbox;
+       appearance: checkbox;
+}
+
+[type="radio"] {
+  -webkit-appearance: radio;
+  -moz-appearance: radio;
+       appearance: radio;
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+}
+
+button[disabled],
+[type="button"][disabled],
+[type="reset"][disabled],
+[type="submit"][disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Remove arrow in IE10 & IE11
+ */
+select::-ms-expand {
+  display: none;
+}
+
+/**
+ * Remove padding
+ */
+option {
+  padding: 0;
+}
+
+/**
+ * Reset to invisible
+ */
+fieldset {
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the outline style in Safari.
+ */
+[type="search"] {
+  outline-offset: -2px;
+  /* 1 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/**
+ * Clickable labels
+ */
+label[for] {
+  cursor: pointer;
+}
+
+/* Interactive */
+/* ============================================ */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/*
+ * Remove outline for editable content.
+ */
+[contenteditable] {
+  outline: none;
+}
+
+/* Table */
+/* ============================================ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption {
+  text-align: left;
+}
+
+td,
+th {
+  vertical-align: top;
+  padding: 0;
+}
+
+th {
+  text-align: left;
+  font-weight: bold;
+}
+
+/* Misc */
+/* ============================================ */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif !important;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.container {
+  padding: 0 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.top-section {
+  position: relative;
+  padding: 75px 0;
+}
+
+.top-section::before {
+  content: "";
+  background-image: url("images/1340963_l.jpg");
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-size: cover;
+}
+
+.top-section__ttl {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  font-size: 2.6rem;
+  color: white;
+  line-height: 1.8;
+  z-index: 99;
+}
+
+.top-section__txt {
+  display: none;
+}
+
+.descript-section {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 40px 0;
+}
+
+.descript-section__txt {
+  font-size: 1.3rem;
+  line-height: 1.7;
+  margin-bottom: 40px;
+}
+
+.descript-section__ttl {
+  font-size: 2.6rem;
+  background-color: #00917b;
+  padding: 14px 0;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.descript-section__ttl--link {
+  font-size: 1.6rem;
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  color: #00917b;
+}
+
+.merit-section {
+  background-image: url("images/3305450_l.jpg");
+  background-size: cover;
+  margin-bottom: 80px;
+  padding: 30px 0;
+}
+
+.merit-section__contents {
+  display: none;
+}
+
+.merit-section__ttl {
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.merit-section__content {
+  padding: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: white;
+  border-radius: 10px;
+  -webkit-box-shadow: black 10px 10px 10px;
+          box-shadow: black 10px 10px 10px;
+  min-height: 400px;
+}
+
+.merit-section__content img {
+  display: block;
+  width: 75px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.merit-section__content h3 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.merit-section__content p {
+  font-size: 1.3rem;
+  line-height: 1.7;
+}
+
+.merit-section__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 20px;
+  margin-top: 20px;
+}
+
+.merit-section__item {
+  width: 150px;
+  background-color: white;
+  border-radius: 50%;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+.merit-section__item img {
+  display: block;
+  width: 50px;
+  margin: 0 auto;
+}
+
+.merit-section__item p {
+  font-size: 1rem;
+  text-align: center;
+  width: 80%;
+  line-height: 1.5;
+}
+
+.btn-section {
+  margin-bottom: 80px;
+}
+
+.btn-section .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #33cc00;
+  border-radius: 10px;
+  width: 275px;
+  margin: 0 auto;
+  padding: 10px 14px;
+}
+
+.btn-section img {
+  width: 59px;
+  height: 59px;
+  display: block;
+  margin-right: 10px;
+}
+
+.btn-section p {
+  font-size: 1.3rem;
+  color: white;
+  line-height: 1.6;
+}
+
+.chart-section {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-size: cover;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.chart-section::before {
+  content: "";
+  background-image: url("images/1317236_l.jpg");
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.1;
+  z-index: -1;
+  background-size: cover;
+}
+
+.chart-section__ttl {
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.chart-section__heading {
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+  background-color: #00917b;
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+  padding: 8px 0;
+}
+
+.chart-section__text {
+  font-size: 1.3rem;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.price-section {
+  padding: 20px 0;
+  margin-bottom: 70px;
+}
+
+.price-section__contents {
+  display: none;
+}
+
+.price-section__ttl {
+  font-size: 2.6rem;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.price-section__heading {
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  margin-top: 40px;
+}
+
+.price-section__img {
+  display: block;
+  width: 100%;
+}
+
+.qa-section {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.qa-section__ttl {
+  font-size: 2.6rem;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.qa-section__heading {
+  font-size: 1.7rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.qa-section__heading::before {
+  content: "Q";
+  display: inline-block;
+  color: #33cc99;
+  border: 1px solid #33cc99;
+  padding: 4px;
+  font-weight: lighter;
+  margin-right: 13px;
+}
+
+.qa-section__text {
+  font-size: 1.3rem;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.swiper-container {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 700px) {
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .top-section__ttl {
+    -webkit-writing-mode: horizontal-tb;
+        -ms-writing-mode: lr-tb;
+            writing-mode: horizontal-tb;
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: bold;
+    line-height: 1.8;
+  }
+  .top-section__txt {
+    margin-top: 40px;
+    display: block;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 2;
+    color: white;
+  }
+  .descript-section {
+    margin-bottom: 30px;
+  }
+  .descript-section__ttl {
+    font-size: 3.2rem;
+    margin-top: 60px;
+  }
+  .descript-section__txt {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .descript-section__txt--mb {
+    display: none;
+  }
+  .merit-section {
+    margin-bottom: 100px;
+  }
+  .merit-section__ttl {
+    font-size: 3rem;
+  }
+  .merit-section .mb {
+    display: none;
+  }
+  .merit-section__contents {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+  .merit-section__content {
+    width: 30%;
+  }
+  .merit-section__item {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 30px;
+  }
+  .merit-section__item img {
+    display: block;
+    width: 80px;
+    margin: 0 auto;
+  }
+  .merit-section__item p {
+    font-size: 1.4rem;
+    text-align: center;
+    width: 80%;
+  }
+  .btn-section {
+    margin-bottom: 100px;
+  }
+  .chart-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .chart-section__ttl {
+    font-size: 3rem;
+  }
+  .chart-section__heading {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+  }
+  .chart-section__text {
+    font-size: 1.6rem;
+    margin-bottom: 50px;
+  }
+  .price-section .mb {
+    display: none;
+  }
+  .price-section__contents {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .price-section__img {
+    width: 45%;
+    margin-bottom: 40px;
+  }
+  .price-section__ttl {
+    font-size: 3rem;
+  }
+  .price-section__heading {
+    font-size: 2.4rem;
+    margin-top: 50px;
+  }
+  .price-section__text {
+    font-size: 1.6rem;
+  }
+  .qa-section__ttl {
+    font-size: 3rem;
+  }
+  .qa-section__heading {
+    font-size: 2.4rem;
+  }
+  .qa-section__text {
+    font-size: 1.6rem;
+    margin-bottom: 50px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
