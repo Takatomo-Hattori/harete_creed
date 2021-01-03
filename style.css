@@ -672,6 +672,16 @@ body {
   line-height: 1.6;
 }
 
+.btn-section .btn-web {
+  margin-top: 15px;
+  display: block;
+  background-color: gray !important;
+  color: white !important;
+  text-align: center;
+  font-size: 1.3rem;
+  padding: 20px 14px;
+}
+
 .chart-section {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
