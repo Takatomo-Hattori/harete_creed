@@ -4,7 +4,7 @@
         "source": "/",
         "headers": [
           {
-            "key": "BASIC_AUTH",
+            "key": "Authorization",
             "value": "Basic BASE64_USERNAME_PASSWORD"
           }
         ]
