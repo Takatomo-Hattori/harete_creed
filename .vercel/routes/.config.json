@@ -1,0 +1,13 @@
+{
+    "headers": [
+      {
+        "source": "/",
+        "headers": [
+          {
+            "key": "Authorization",
+            "value": "Basic BASE64_USERNAME_PASSWORD"
+          }
+        ]
+      }
+    ]
+  }
