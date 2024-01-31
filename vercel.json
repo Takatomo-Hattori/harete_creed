@@ -1,4 +1,7 @@
 {
+    "redirects": [
+        { "source": "/", "destination": "https://count-down.cohu.dev", "permanent": true }
+      ],
     "builds": [
       {
         "src": "app.js",
@@ -7,9 +10,5 @@
     ],
     "routes": [
       { "src": "/.*", "dest": "app.js" }
-    ],
-
-    "redirects": [
-        { "source": "/", "destination": "https://count-down.cohu.dev", "permanent": true }
-      ]
+    ]
   }
