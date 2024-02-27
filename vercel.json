@@ -1,4 +1,4 @@
 {"redirects": [
-    { "source": "/admin", "destination": "https://count-down.cohu.dev", "permanent": true }
+    { "source": "/admin", "destination": "https://count-down.cohu.dev" }
   ]
 }
